@@ -1287,11 +1287,11 @@ import static java.lang.Math.sin;
                                  checkPointsOfExistingRoutewithNewRoute(EdgeWithoutDuplicates, RouteDeviationPointsForComparision);
 
                                //  Log.e("List Verification", "List Verification commonPoints --  DATA " + commonPoints.size());
-                               //  Log.e("List Verification", "List Verification  new_unCommonPoints -- DATA " + new_unCommonPoints.size());
+                                 Log.e("List Verification", "List Verification  new_unCommonPoints -- DATA " + new_unCommonPoints.size());
 
                                  if (commonPoints.size() == 0) {
 
-                                 } else if (commonPoints.size() > 0 && new_unCommonPoints.size() >5 ) {
+                                 } else if (commonPoints.size() > 0 && new_unCommonPoints.size() >4 ) {
                                      //  Log.e("Route Deviation", " IS ROUTE VERIFY  ###### " + " Route COINSIDENCE");
                                      if (mPositionMarker != null && mPositionMarker.isVisible() == true) {
                                          PolylineOptions polylineOptions = new PolylineOptions();
