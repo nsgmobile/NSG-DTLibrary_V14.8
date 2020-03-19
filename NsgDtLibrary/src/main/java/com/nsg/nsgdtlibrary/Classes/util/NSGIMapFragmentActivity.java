@@ -713,6 +713,9 @@ import static java.lang.Math.sin;
                                                             returnedDistance3 = consDistList.get(consDistList.size() - 3);
                                                            // Log.e("APP DATA ", " Distance 3 ----" + returnedDistance3);
                                                         }
+                                                        Log.e("Route DeviationDistance","Internal Route DeviationDistance Given -- "+routeDeviationDistance);
+                                                        Log.e("Route DeviationDistance","Internal Route DeviationDistance Taken -- "+returnedDistance3);
+
                                                         if (returnedDistance1 > routeDeviationDistance) {
                                                             if (returnedDistance2 > routeDeviationDistance) {
                                                                 if (returnedDistance3 > routeDeviationDistance) {

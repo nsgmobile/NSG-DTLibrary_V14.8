@@ -32,6 +32,7 @@ public class NSGApiActivity extends FragmentActivity implements NSGIMapFragmentA
     private String jobId="1",routeId;
 
 
+
     private String GeoFenceCordinates="17.455565 78.555251,\n" +
             "17.455483 78.555368,\n" +
             "17.455285 78.555436,\n" +
