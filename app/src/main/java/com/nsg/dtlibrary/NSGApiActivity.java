@@ -39,7 +39,7 @@ public class NSGApiActivity extends FragmentActivity implements NSGIMapFragmentA
             "17.455259 78.554962,\n" +
             "17.455504 78.554935,\n" +
             "17.455702 78.555192";
-    /*
+
 
     String SourcePosition="55.33314374 25.26798329";
     String DestinationPosition="55.33459538 25.26849246";
@@ -252,7 +252,7 @@ public class NSGApiActivity extends FragmentActivity implements NSGIMapFragmentA
             "    ]\n" +
             "}";
 
-     */
+
 /*
 /*
    String SourcePosition="78.570759 17.473453";
@@ -3187,7 +3187,7 @@ public class NSGApiActivity extends FragmentActivity implements NSGIMapFragmentA
             "[55.066861270000061,24.980247913000085]]}},{\"$id\":\"6\",\"EdgeNo\":\"443\",\"GeometryText\":\"-\",\"Geometry\":\n" +
             "{\"$id\":\"7\",\"type\":\"LineString\",\"coordinates\":[[55.066861270000061,24.980247913000085],[55.0672260238388,24.9799000715094]]}}]}";
 */
-
+/*
 
     String SourcePosition="78.570799 17.473538";
     String DestinationPosition="78.555714 17.456068";
@@ -3378,7 +3378,7 @@ public class NSGApiActivity extends FragmentActivity implements NSGIMapFragmentA
             "    ]\n" +
             "}";
 
-
+*/
 
 /*
      private String SourcePosition = "55.33279 25.26886";

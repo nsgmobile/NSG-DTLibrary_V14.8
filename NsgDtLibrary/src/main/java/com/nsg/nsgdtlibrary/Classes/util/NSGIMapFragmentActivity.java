@@ -602,9 +602,9 @@ import static java.lang.Math.sin;
                                         if (OldGPSPosition != null) {
                                             double distance = distFrom(OldGPSPosition.latitude, OldGPSPosition.longitude, currentGpsPosition.latitude, currentGpsPosition.longitude);
                                           //  Log.e("distance", "distance" + distance);
-                                            if (distance > 40) {
+                                           // if (distance > 40) {
 
-                                            } else {
+                                          //  } else {
                                                 OldNearestPosition = nPosition;
                                                // Log.e("CurrentGpsPoint", " OLD Nearest GpsPoint " + OldNearestPosition);
                                                 nPosition = GetNearestPointOnRoadFromGPS(OldGPSPosition, currentGpsPosition);
@@ -739,7 +739,7 @@ import static java.lang.Math.sin;
                                                     }
                                                 }
 
-                                            }
+                                           // }
 
                                          }
                                     } else {
