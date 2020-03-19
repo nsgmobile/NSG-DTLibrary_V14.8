@@ -44,6 +44,7 @@ import android.view.ViewGroup;
 import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
@@ -259,6 +260,8 @@ import static java.lang.Math.sin;
      private boolean isLieInGeofence=false;
      private boolean isContinuoslyOutOfTrack=false;
      boolean httpRequestFlag=false;
+     private EditText dynamic_changeValue;
+     private Button submit;
 
      String s1,s2;
 
@@ -386,6 +389,10 @@ import static java.lang.Math.sin;
             //Initialise Buttons
             re_center=(ImageButton)rootView.findViewById(R.id.re_center);
             re_center.setOnClickListener(NSGIMapFragmentActivity.this);
+            dynamic_changeValue=(EditText)rootView.findViewById(R.id.dynamic_buffer);
+            submit=(Button)rootView.findViewById(R.id.submit);
+            submit.setOnClickListener(NSGIMapFragmentActivity.this);
+
             change_map_options = (ImageButton)rootView.findViewById(R.id.change_map_options);
             change_map_options.setOnClickListener(NSGIMapFragmentActivity.this);
             // Delete Contents fron ROUTE_T On initialisation of Route view
@@ -521,6 +528,10 @@ import static java.lang.Math.sin;
                     mMap.moveCamera(CameraUpdateFactory.newLatLng(myLocation));
                     mMap.animateCamera(CameraUpdateFactory.zoomTo(18));
                 }
+            }else if(v==submit){
+                int val = Integer.parseInt(dynamic_changeValue.getText().toString());
+                routeDeviationDistance=val;
+
             }
         }
         public int startNavigation() {
