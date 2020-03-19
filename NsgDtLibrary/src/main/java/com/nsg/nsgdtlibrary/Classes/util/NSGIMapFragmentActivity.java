@@ -529,9 +529,13 @@ import static java.lang.Math.sin;
                     mMap.animateCamera(CameraUpdateFactory.zoomTo(18));
                 }
             }else if(v==submit){
-                int val = Integer.parseInt(dynamic_changeValue.getText().toString());
-                routeDeviationDistance=val;
-
+                if(!dynamic_changeValue.getText().toString().isEmpty()) {
+                    int val = Integer.parseInt(dynamic_changeValue.getText().toString());
+                    routeDeviationDistance = val;
+                    Log.e("Route Deviation Buffer", " Deviation Buffer Test---- " + routeDeviationDistance);
+                }else{
+                    routeDeviationDistance = 10;
+                }
             }
         }
         public int startNavigation() {
